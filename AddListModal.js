@@ -51,7 +51,7 @@ class AddListModal extends React.Component{
  <View style={{alignSelf:'stretch',marginHorizontal:32}}>
           <Text style={styles.title}>Create Todo List
           </Text>
-          <TextInput style={styles.input} placeholder="List Name@" onChangeText={text=>this.setState({name:text})}/>
+          <TextInput style={styles.input} placeholder="List Name?" onChangeText={text=>this.setState({name:text})}/>
                     <View style={{flexDirection:'row',justifyContent:'space-between',marginTop:12,}}>{this.renderColors()}
           </View>
            <TouchableOpacity style={[styles.create,{backgroundColor:this.state.color}]} onPress={this.createTodo}>
